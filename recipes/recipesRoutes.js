@@ -3,7 +3,6 @@ const recipes = require('./recipesModel.js');
 
 const router = express.Router();
 
-// get a list of courses
 router.get('/', (req, res) => {
   recipes
     .find()
@@ -13,7 +12,6 @@ router.get('/', (req, res) => {
     .catch(err => res.status(500).json(err));
 });
 
-// get a course by id
 router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;
@@ -30,7 +28,6 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// create courses
 router.post('/', (req, res) => {
   const recipe = req.body;
 
@@ -44,7 +41,6 @@ router.post('/', (req, res) => {
     });
 });
 
-// update courses
 router.put('/:id', (req, res) => {
   const { id } = req.params;
   const changes = req.body;
@@ -61,7 +57,6 @@ router.put('/:id', (req, res) => {
     .catch(err => res.status(500).json(err));
 });
 
-// delete courses
 router.delete('/:id', (req, res) => {
   const { id } = req.params;
 

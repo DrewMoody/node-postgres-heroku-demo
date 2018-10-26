@@ -36,5 +36,3 @@ function remove(id) {
     .where({ id })
     .del();
 }
-
-// repository pattern for data access
