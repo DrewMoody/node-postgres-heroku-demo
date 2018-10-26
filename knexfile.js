@@ -28,4 +28,5 @@ module.exports = {
     useNullAsDefault: true,
     ssl: true,
   }
+  
 };
