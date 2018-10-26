@@ -11,8 +11,7 @@ const recipesRoutes = require('./recipes/recipesRoutes.js');
 
 const server = express();
 
-server.use(helmet());
-server.use(express.json(), cors());
+server.use(express.json(), cors(), helmet());
 
 server.get('/', (req, res) => {
   res.send('Hello friend')
