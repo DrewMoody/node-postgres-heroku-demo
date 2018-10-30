@@ -13,5 +13,6 @@ Reference guide: https://devcenter.heroku.com/articles/getting-started-with-node
 - `heroku open` opens the url in the browser
 - `heroku logs --tail` to see your logs
 - `heroku addons:create heroku-postgresql:hobby-dev` to provision a db
+- Set env variable `ENVIRONMENT` to `production`. You can do this by navigating to your Heroku app's dashboard, then go to settings >> config vars >> reveal config vars >> key = `ENVIRONMENT`, value = `production`
 - `heroku run knex migrate:latest` run migrations
 - `heroku run knex seed:run` run seeds
