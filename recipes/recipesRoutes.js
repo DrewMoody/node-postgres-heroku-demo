@@ -62,7 +62,7 @@ router.delete('/:id', (req, res) => {
 
   recipes
     .remove(id)
-    .then(count => {
+    .then(success => {
       if (!success || success < 1) {
         res.status(404).json({ message: 'No records found to delete' });
       } else {
