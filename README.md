@@ -1,4 +1,6 @@
-# nodepostgres_deploy_demo
+# node-postgres-heroku-demo
+
+This is a step-by-step guide to getting a Node.js app with Postgresql running on Heroku.
 
 Reference guide: https://devcenter.heroku.com/articles/getting-started-with-nodejs
 
