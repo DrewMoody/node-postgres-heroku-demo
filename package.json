@@ -21,7 +21,7 @@
   "homepage": "https://github.com/DrewMoody/mealprepbackend#readme",
   "dependencies": {
     "cors": "^2.8.4",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "helmet": "^3.14.0",
     "knex": "^0.15.2",
     "pg": "^7.5.0",
